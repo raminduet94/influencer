@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Raleway&display=swap');
+/* ----General Style ----*/
+body{
+    font-family: font-family: 'Raleway', sans-serif;
+    color: #383A3B;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 995px;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.fas{
+    color: #F28927;
+}
+/* Body top section */
+.top-container{
+    display: flex;
+    flex-direction: row;
+    width: 995px;
+}
+
+.top-container a{
+   
+    background-color: #E22E6D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+
+.top-container img{
+    width: 400px;
+    height: 400px;
+}
+
+
+.top-description> p{
+    margin-bottom: 30px;
+}
+/* popular colection */
+
+.popular-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 15px;
+}
+.single-product{
+box-shadow: 10px 10px 40px rgb(161, 161, 161);
+
+   padding: 20px;
+   border-radius: 10px;
+   overflow: hidden;
+
+}
+.price{
+    font-weight: 700;
+}
+
+.thumbnail img {
+    width: 100%;
+
+}
+
+.link-more{
+    
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: right;
+    
+    
+}
+
+.link-more a{
+    margin-top: 20px;
+    color: #E22E6D;
+    margin-right: 20px;
+    
+}
+/* Footer */
+footer{
+    background-color: #0A0826;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    
+    width:100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p i{
+    margin-right: 20px;
+}
+/* This section for Media Queary */
+@media only screen  and (max-width: 688px) 
+{
+  .container {
+      width:100%
+  } 
+  .heading-1,heading-2{
+      text-align: center;
+  }
+  .top-container{
+    flex-direction: column;
+     flex-wrap: wrap;
+     width:100%;
+     text-align: center;
+ }
+
+ .top-container img{
+     width: 80%;
+     height: auto;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+
+ .top-description{
+     padding: 0 20px;
+ }
+
+ .popular-products{
+    grid-template-columns: repeat(1, 1fr);
+ }
+}
+
